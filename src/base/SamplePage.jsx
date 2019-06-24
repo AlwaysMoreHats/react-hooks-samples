@@ -11,7 +11,7 @@ export default class SamplePage extends Component {
     const { hasNotes } = this.state
 
     return (
-      <AccountsContext.Provider>
+      <AccountsContext.Provider value={{ accountName: 'Sample Trust'}}>
         <div className="center-page">
           <AccountCreatedTitle />
 
@@ -24,7 +24,7 @@ export default class SamplePage extends Component {
               hasNotes={hasNotes}
               setHasNotes={() => this.setState({ hasNotes: !hasNotes })}
             />
-            <button>Continue to Accounts Page</button>
+            <button className="continue-button">Continue to Accounts Page</button>
           </div>
 
           <MoreInfoBox title="Who can see my notes?">
