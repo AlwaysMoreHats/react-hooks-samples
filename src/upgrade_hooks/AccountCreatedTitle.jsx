@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import AccountsContext from '../context/AccountsContext'
 
 const AccountCreatedTitle = () => {
-  return <h1 className="account-created-title">Account Created</h1>
+  const { accountName } = useContext(AccountsContext)
+
+  return (
+    <h1 className="account-created-title">
+      Account "{accountName}" Created
+    </h1>
+  )
 }
 
 export default AccountCreatedTitle
