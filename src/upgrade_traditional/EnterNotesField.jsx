@@ -28,4 +28,5 @@ class EnterNotesField extends Component {
     )
   }
 }
+
 export default EnterNotesField
