@@ -24,7 +24,9 @@ export default class SamplePage extends Component {
               hasNotes={hasNotes}
               setHasNotes={() => this.setState({ hasNotes: !hasNotes })}
             />
-            <button className="continue-button">Continue to Accounts Page</button>
+            <button className="continue-button">
+              Continue to Accounts Page
+            </button>
           </div>
 
           <MoreInfoBox title="Who can see my notes?">
